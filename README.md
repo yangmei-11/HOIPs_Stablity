@@ -1,5 +1,7 @@
 # HOIPs_Stablity
-read_cif_data.py
+
+**read_cif_data.py**
+
 This script batch-processes crystallographic structure files in CIF or POSCAR format located in the cif_merge directory.
 
 It parses each structure using pymatgen to obtain the crystal structure object.
@@ -10,7 +12,8 @@ The structure is serialized into a dictionary, and the chemical formula is recor
 
 All parsed data, including metadata and structure information, are stored in kim_raw_data.csv for subsequent analysis.
 
-extract_material_features.py
+**extract_material_features.py**
+
 This script generates a comprehensive feature set from the structures and composition data saved in kim_raw_data.csv.
 
 Restores the crystal structure from its dictionary representation and computes basic structural features (density, volume, space group number, lattice parameters, etc.) using pymatgen.
